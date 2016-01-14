@@ -1,0 +1,22 @@
+{
+  "name": "blog-procesozombie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "shipitfile.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fer2d2/blog-procesozombie.git"
+  },
+  "author": "@FeR2D2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fer2d2/blog-procesozombie/issues"
+  },
+  "homepage": "https://github.com/fer2d2/blog-procesozombie#readme",
+  "devDependencies": {
+    "shipit-cli": "^1.4.1"
+  }
+}
