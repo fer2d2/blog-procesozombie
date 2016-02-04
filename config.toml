@@ -40,7 +40,7 @@ PaginatePath = "/"
 
     # Google Analytics
     # Remove, comment, or leave it blank if you don't have one.
-    ganalytics = ""
+    ganalytics = "UA-73307155-1"
 
     disqus = "elprocesozombie"
 [menu]
