@@ -1,6 +1,6 @@
 +++
 author = "@FeR2D2"
-date = "2016-03-06T16:59:34+01:00"
+date = "2016-03-06T14:00:34+01:00"
 title = "El media center definitivo con Retropie y Raspberry-Pi (Parte 1: Instalación)"
 comments = true
 +++
