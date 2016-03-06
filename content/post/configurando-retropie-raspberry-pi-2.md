@@ -18,7 +18,7 @@ Como yo estoy trabajando desde un Mac, explicaré los pasos para este sistema op
 
 Una vez accedemos al sitio oficial, simplemente tenemos que localizar la [sección de descargas](http://blog.petrockblock.com/retropie/retropie-downloads/) y obtener la imagen que necesitemos dependiendo de nuestro modelo de Raspberry-Pi. En mi caso se trata de la imagen **RetroPie SD-card Image for Raspberry Pi 2 and 3**. En mi caso he descargado la versión *Standard*.
 
-## Escribir el contenido de la imagen en una tarjeta SD.
+## Escribir el contenido de la imagen en una tarjeta SD
 
 He elegido una tarjeta MicroSD de 32GB de Samsung, que podéis encontrar a un precio muy económico en [Amazon](http://www.amazon.es/dp/B00J29BR3Y/ref=asc_df_B00J29BR3Y32388716/?tag=googshopes-21&creative=24538&creativeASIN=B00J29BR3Y&linkCode=df0&hvdev=c&hvnetw=g&hvqmt=) y nos garantiza una velocidad de lectura/escritura decente al ser de *clase 10*.
 
@@ -75,7 +75,7 @@ El proceso puede tardar un rato en ejecutar. No lo detengáis hasta que en la co
 
 ![Copiar imagen en SD](/img/sd-copy-finalizado.png)
 
-Finalizado este paso, nos resta conectar a nuestra Raspberry-Pi un monitor y un teclado, y empezar a configurar el sistema. De ello hablaré en el **próximo artículo**, donde comentaré:
+Finalizado este paso, nos resta conectar a nuestra Raspberry-Pi un monitor y un teclado, y empezar a configurar el sistema. De ello hablaré en el **próximo artículo**, donde hablaré del proceso de configuración de nuestro *media center*:
 
 - Expandir el sistema de ficheros.
 - Configurar la conexión WiFi.
