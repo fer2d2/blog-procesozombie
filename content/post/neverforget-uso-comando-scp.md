@@ -1,6 +1,6 @@
 +++
 date = "2016-05-23T22:04:35+02:00"
-title = "Never Forget: uso comando scp"
+title = "Never Forget: uso del comando scp"
 comments = true
 +++
 
