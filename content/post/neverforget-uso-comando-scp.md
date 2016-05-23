@@ -1,7 +1,6 @@
 +++
-author = "@FeR2D2"
-date = "2016-05-23T22:00:34+01:00"
-title = "#NeverForget uso del comando scp"
+date = "2016-05-23T22:04:35+02:00"
+title = "Never Forget: uso comando scp"
 comments = true
 +++
 
