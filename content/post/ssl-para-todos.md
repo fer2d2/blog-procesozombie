@@ -99,7 +99,7 @@ server {
 }
 ```
 
-### 2. Creación de un script para crear/renovar los certificados:
+### 3. Creación de un script para crear/renovar los certificados:
 
 Con algunas variaciones, podemos utilizar el siguiente script (`renew.sh`):
 
@@ -152,7 +152,7 @@ crontab -e
 ...Y añadimos al crontab la siguiente línea:
 
 ```bash
-0 4 * * * /path/to/renew.sh renew > /some/log/location/renew.log
+0 4 * * * /path/to/renew.sh renew > /some/log/location/renew.log renew
 ```
 
 ## Conclusiones
