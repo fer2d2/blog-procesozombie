@@ -58,7 +58,7 @@ nginx:
     - "0.0.0.0:443:443"
 ```
 
-Como puede verse, el contenedor monta dos directorios con los certificados accesibles, así como un directorio donde letsencrypt pueda escribir los *retos* que usará el servidor al validar crear/renovar los certificados:
+Como puede verse, el contenedor monta dos directorios con los certificados accesibles, así como un directorio donde letsencrypt podrá escribir los *retos* que usará el servidor al crear/renovar los certificados:
 
   - /etc/letsencrypt/live/procesozombie.com:/etc/letsencrypt/live/procesozombie.com
   - /etc/letsencrypt/archive/procesozombie.com:/etc/letsencrypt/archive/procesozombie.com
@@ -114,15 +114,14 @@ DOMAIN=procesozombie.com
 
 DOCKER_COMPOSE_PATH=/var/docker-projects/blog-procesozombie.com/docker-compose.yml
 
-PRE_HOOK="docker-compose -f $DOCKER_COMPOSE_PATH stop nginx"
-POST_HOOK="docker-compose -f $DOCKER_COMPOSE_PATH start nginx"
+POST_HOOK="docker-compose -f $DOCKER_COMPOSE_PATH restart nginx"
 
 function generateCert {
   $CERTBOT_PATH certonly --webroot -w $WEBROOT_PATH -d $DOMAIN -d $DOMAIN_WWW
 }
 
 function renewCert {
-  $CERTBOT_PATH renew --webroot --pre-hook "$PRE_HOOK" --post-hook "$POST_HOOK"
+  $CERTBOT_PATH renew --webroot --post-hook "$POST_HOOK"
 }
 
 ACTION=$1
@@ -151,13 +150,13 @@ crontab -e
 
 ...Y añadimos al crontab la siguiente línea:
 
-```bash
+```yml
 0 4 * * * /path/to/renew.sh renew > /some/log/location/renew.log renew
 ```
 
 ## Conclusiones
 
-Como veis, tener certificados SSL "en verde" se ha convertido en algo sencillo y gratuito gracias a iniciativas como Letsencrypt. ¡Ya no hay excusa para no utilizar HTTPS!
+Como veis, tener certificados SSL "en verde" se ha convertido en algo sencillo y gratuito gracias a  Letsencrypt. ¡Ya no hay excusa para no utilizar HTTPS!
 
 [1]: https://www.startssl.com/ "Sitio web oficial de StartSSL"
 [2]: https://ssl.comodo.com/free-ssl-certificate.php "Certificados gratuitos de Comodo"

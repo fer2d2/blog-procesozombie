@@ -21,8 +21,7 @@ PaginatePath = "/"
     # Tagline; HTML accepted here. Keep it concise.
     tagline = "Desarrollo de software, tecnología, código abierto y curiosidades"
 
-    # Footer; Markdown accepted here.
-    footer = "Copyright 2015 &copy; @FeR2D2"
+    author = "Fernando Moro Hernández"
 
     # Description and keywords for <meta> tags.
     # Remember to set this for your main page.
@@ -30,7 +29,7 @@ PaginatePath = "/"
     # defined by `description` and `keywords` variables in the front matter
     # of the markdown file.
     description = "Desarrollo de software, tecnología, código abierto y curiosidades."
-    keywords = "desarrollo, programación, software, tecnología, curiosidades"
+    keywords = "desarrollo, programación, software, tecnología, curiosidades, linux"
 
     # Social links, must be full URLs (e.g. https://github.com/CrimsonRay/).
     # Remove, comment, or leave blank any field to leave them out.
@@ -51,10 +50,10 @@ PaginatePath = "/"
     identifier = "home"
     name       = "inicio"
     url        = ""
-    weight     = 0
+    weight     = 1
 
     [[menu.main]]
     identifier = "about"
     name       = "acerca de"
     url        = "#"
-    weight     = 1
+    weight     = 2
